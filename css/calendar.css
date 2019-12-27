@@ -1,0 +1,18 @@
+body {color:#333;}
+
+#calendar {width: 1000px;margin:0 auto;}
+
+.top {display:flex;justify-content:space-between;height:80px;}
+.top .prev, .top .next {height:80px;line-height:80px;}
+
+.calendar {width:100%;}
+.calendar table {width:100%;table-layout:fixed;border-spacing:0;border:1px solid #bbb;border-right:0;border-bottom:0;}
+.calendar th {height: 30px;border:1px solid #bbb;border-top:0;border-left:0;}
+.calendar td {height:100px;border:1px solid #bbb;border-top:0;border-left:0;vertical-align:top;background:#eee;padding:10px;}
+.calendar td.current {background:#D4F5F0;}
+.calendar td.current .day {font-weight:bold;}
+.calendar td.sunday {background:rgb(252, 184, 184);}
+.calendar td.holiday {background:#FF9393;}
+.calendar td .day {float:left;}
+.calendar td .holiday {float:right;}
+.calendar td .event {clear:both;}
