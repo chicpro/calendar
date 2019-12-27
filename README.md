@@ -43,6 +43,20 @@ $DB = new DB(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 ```
 
 
+##### holiday 테이블
+
+```
+CREATE TABLE `holiday` (
+  `no` int(11) NOT NULL AUTO_INCREMENT,
+  `year` int(11) unsigned NOT NULL,
+  `month` tinyint(4) unsigned NOT NULL,
+  `day` tinyint(4) unsigned NOT NULL,
+  `name` varchar(20) NOT NULL,
+  PRIMARY KEY (`no`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
+
 
 ##### 디렉토리 구조
 
